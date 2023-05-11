@@ -42,7 +42,7 @@ public class RoomService {
 //    Előadó létrehozása vagy módosítása
     public DtoRoom saveRoom(DtoRoom dtoRoom, long id) {
         if (id == -1) {
-            if (roomRepository.findRoomByNameContainingIgnoreCase(dtoRoom.getName()).contains(dtoRoom)) {
+            if (roomRepository.findRoomByNameContainingIgnoreCase(dtoRoom.getName()) != null) {
                 throw new InDatabaseException(dtoRoom.getName());
             }
             Room room = Room.builder()

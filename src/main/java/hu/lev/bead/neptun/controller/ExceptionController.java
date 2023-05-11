@@ -1,7 +1,5 @@
 package hu.lev.bead.neptun.controller;
 
-import hu.lev.bead.neptun.dto.DtoRoom;
-import hu.lev.bead.neptun.dto.DtoSubject;
 import hu.lev.bead.neptun.exception.DefaultErrorException;
 import hu.lev.bead.neptun.exception.InDatabaseException;
 import hu.lev.bead.neptun.exception.NotFoundException;
